@@ -1,0 +1,38 @@
+name: Feature Request
+description: Suggest a new feature or improvement for AquaGuard
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a feature! Please describe your idea in detail.
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Describe the feature or improvement you want to see.
+      placeholder: e.g., Add a command to export logs to CSV.
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Explain how this feature would be useful and in what scenarios.
+      placeholder: e.g., Exporting logs to CSV would help admins analyze data offline.
+    validations:
+      required: true
+  - type: input
+    id: minecraft-version
+    attributes:
+      label: Minecraft Version
+      description: Which Minecraft version(s) should this feature support? (e.g., 1.20.1)
+      placeholder: e.g., 1.20.1
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Any other details or ideas related to the feature.
+      placeholder: e.g., Maybe add a GUI for easier log management?
